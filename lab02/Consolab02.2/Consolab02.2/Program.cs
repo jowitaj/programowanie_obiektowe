@@ -25,10 +25,10 @@ namespace Consolab02._2
         }
     }
 
-    public class Student
+    public class Student:
     {
         private string group;
-        private List tasks;
+        private List<Task> tasks;
         public string group;
 
         public Student (string name, int age, string group)
@@ -49,7 +49,7 @@ namespace Consolab02._2
         //dokończyć
     }
 
-    public class Teacher
+    public class Teacher:
     {
         public Teacher(string name, int age)
         {
@@ -59,7 +59,7 @@ namespace Consolab02._2
         //dokończyć
     }
 
-    public class Task
+    public class Task:
     {
         private string name;
         private TaskStatus status;
@@ -81,4 +81,20 @@ namespace Consolab02._2
         }
         //dokończyć
     }
-}
+
+    public class Classroom:
+    {
+        private string name;
+        private string persons;
+    
+    public Classroom (string name)
+    {
+        this.name = name;
+    }
+        public Classroom(string name, Person[] persons)
+        {
+            this.name = name;
+            this.persons = persons;
+        }
+
+    }
