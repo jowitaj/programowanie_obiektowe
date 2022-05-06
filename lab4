@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main()
+        {
+
+            //rozszerzenia plików
+            Dictionary<string, string> fileTypes = new Dictionary<string, string>
+            {
+                { "image", ".png .webp .jpg .gif .tiff" },
+                { "audio", ".ogg .mp3 .m4a" },
+                { "video", ".mkv .mp4 .webm" },
+                { "document", ".txt .doc .docx .xml .xlmx" }
+            };
+
+            // przestrzeń do przeskanowania
+            string zadanie = @"C:\zadanie";
+        }
+
+        //tworzenie nowego słownika
+        Dictionary<string, FileInfo> files = new Dictionary<string, FileInfo>();
+
+        //wywołanie funkcji, która pobiera inf o plikach w folderze
+        string[] files1 = Directory.GetFiles(folder, "*", SearchOption.AllDirectories);
+    }
