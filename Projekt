@@ -1,78 +1,85 @@
 PROJEKT ZALICZENIOWY
 Temat projektu: Przedszkole
 
-
-
 WIZUALNE
+_______________________________________________________________________________________________________________________________
 
+1.Okienko logowania
+    -pole do wprowadzenia loginu
+    -pole do wprowadzenia hasła
+    -przycisk ‘zaloguj’
+    -komunikaty dotyczące niepoprawnych danych logowania
 
-Okienko logowania
-pole do wprowadzenia loginu
-pole do wprowadzenia hasła
-przycisk ‘zaloguj’
-komunikaty dotyczące niepoprawnych danych logowania
+2. Okienko dziecko
+    -Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
+    -Po lewej stronie u góry: data
+    -Poniżej, wyświetlające jedynie informacje dla obecnego dnia
+        -obecność 
+        -posiłki 
+        -zajęcia 
 
-Okienko dziecko
-Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
-po lewej stronie u góry: data
-poniżej, wyświetlające jedynie informacje dla obecnego dnia
-obecność 
-posiłki 
-zajęcia 
+3. Okienko rodzice
+    -Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
+    -Tabele poniżej, wyświetlające jedynie ostatnie zmiany 
+        -opłaty
+        -ogłoszenia
 
-Okienko rodzice
-Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
-tabele poniżej, wyświetlające jedynie ostatnie zmiany 
-opłaty
-ogłoszenia
-
-Dane 
-Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
-tabela Dane
+4. Dane 
+    -Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
+    -tabela Dane
 
 
 TECHNICZNE
+_______________________________________________________________________________________________________________________________
 
+1. Baza danych:
+  1.1 Dziecko
+        - id dziecka
+        
+      1.1.1 Tabela obecność 
+        - dzień tygodnia
+        - godzina przyjścia
+        - godzina wyjścia
+        
+     1.1.2 Tabela posiłki 
+        - dzień tygodnia
+        - śniadanie
+        - obiad
+        - podwieczorek
+        
+      1.1.3 Tabela zajęcia
+        - data
+        - temat zajęć 
+        - opis
+        
+        
+  1.2 Rodzice
+      1.2.1 Tabela opłaty
+        - id dziecka
+        - miesiąc 
+        - zapłacone (tak/nie)
+        
+      1.2.2 Tabela ogłoszenia
+         - tytuł
+         - treść
+      
+  1.3 Dane
+        - id dziecka
+        - imię i nazwisko
+        - imię matki 
+        - nazwisko matki
+        - imię ojca
+        - nazwisko ojca
+        - pesel
+        - data urodzenia
+        - ulica
+        - nr domu
+        - kod pocztowy
+        - miejscowość 
+        - telefon kontaktowy
 
-Baza danych:
-Dziecko
-id dziecka
-tabela obecność 
-dzień tygodnia
-godzina przyjścia
-godzina wyjścia
-tabela posiłki 
-dzień tygodnia
-śniadanie
-obiad
-podwieczorek
-tabela zajęcia
-data’	
-temat zajęć 
-opis
-Rodzice
-tabela opłaty
-id dziecka
-miesiąc 
-zapłacone (tak/nie)
-ogłoszenia
-tabela dane
-id dziecka
-imię i nazwisko
-imię matki 
-nazwisko matki
-imię ojca
-nazwisko ojca
-pesel
-data urodzenia
-ulica
-nr domu
-kod pocztowy
-miejscowość 
-telefon kontaktowy
-
-ORM, operacje na bazie
-Uzupełnianie tabel  - obecność, posiłki, zajęcia, opłaty, ogłoszenia
-Modyfikowanie rekordów
-Dodawanie rekordów
-Usuwanie rekordów
+2. ORM, operacje na bazie
+  2.1 Uzupełnianie tabel  - obecność, posiłki, zajęcia, opłaty, ogłoszenia
+  2.2 Modyfikowanie rekordów
+  2.3 Dodawanie rekordów
+  2.4 Usuwanie rekordów
