@@ -1,0 +1,78 @@
+PROJEKT ZALICZENIOWY
+Temat projektu: Przedszkole
+
+
+
+WIZUALNE
+
+
+Okienko logowania
+pole do wprowadzenia loginu
+pole do wprowadzenia hasła
+przycisk ‘zaloguj’
+komunikaty dotyczące niepoprawnych danych logowania
+
+Okienko dziecko
+Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
+po lewej stronie u góry: data
+poniżej, wyświetlające jedynie informacje dla obecnego dnia
+obecność 
+posiłki 
+zajęcia 
+
+Okienko rodzice
+Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
+tabele poniżej, wyświetlające jedynie ostatnie zmiany 
+opłaty
+ogłoszenia
+
+Dane 
+Na górze: rozwijane menu [dziecko, rodzice, dane, dokumenty, wyloguj]
+tabela Dane
+
+
+TECHNICZNE
+
+
+Baza danych:
+Dziecko
+id dziecka
+tabela obecność 
+dzień tygodnia
+godzina przyjścia
+godzina wyjścia
+tabela posiłki 
+dzień tygodnia
+śniadanie
+obiad
+podwieczorek
+tabela zajęcia
+data’	
+temat zajęć 
+opis
+Rodzice
+tabela opłaty
+id dziecka
+miesiąc 
+zapłacone (tak/nie)
+ogłoszenia
+tabela dane
+id dziecka
+imię i nazwisko
+imię matki 
+nazwisko matki
+imię ojca
+nazwisko ojca
+pesel
+data urodzenia
+ulica
+nr domu
+kod pocztowy
+miejscowość 
+telefon kontaktowy
+
+ORM, operacje na bazie
+Uzupełnianie tabel  - obecność, posiłki, zajęcia, opłaty, ogłoszenia
+Modyfikowanie rekordów
+Dodawanie rekordów
+Usuwanie rekordów
